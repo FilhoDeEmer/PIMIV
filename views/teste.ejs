@@ -1,0 +1,102 @@
+<!– tela principal –>
+  <%- include ('partials/header.ejs')%>
+
+    <%- include ('partials/navbarhome.ejs')%>
+
+      <title>Home Page</title>
+
+      <body>
+        <div class="container-fluid">
+          <div class="row flex-nowrap">
+            <div class="bg-white col-auto col-md-2 col-lg-3 min-vh-100 d-flex flex-column justify-content-between">
+              <div class="bg-white">
+                <br>
+                <a class="text-dark text-decoration-none d-flex align-items-center ms-4" role="">
+                  <span class="fs-5 ms-5">Hermes S.E.</span>
+                </a>
+                <a class="text-dark text-decoration-none d-flex align-items-center ms-4" role="">
+                  <span class="fs-5 ms-5">Pedro C. Sanches</span>
+                </a>
+
+                <hr class="text-dark">
+                <ul class="nav nav-pills flex-column mt-4 ">
+
+                  <div class="row flex-nowrap bg-white">
+                    <div class="col-auto col-md-2 col-lg-11 justify-content-between ">
+                      <br>
+                      <div role="tabpanel">
+                        <div class="list-group " id="list-tab" role="tablist">
+                          <a class="list-group-item list-group-item-action active " id="list-home-list"
+                            data-bs-toggle="list" href="#list-home" role="button" aria-controls="list-home"><i
+                              class="fs-5 fa-solid fa-user text-black"></i><span
+                              class="fs-5 ms-3 d-none d-sm-inline text-dark">Minhas Informações</span></a>
+                          <hr class="text-dark">
+                          <a class="list-group-item list-group-item-action " id="list-profile-list"
+                            data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"><i
+                              class="fs-5 fa-solid fa-wallet text-black"></i><span
+                              class="fs-5 ms-3 d-none d-sm-inline text-dark">Folha de Pagamentos</span></a>
+                          <hr class="text-dark">
+                          <a class="list-group-item list-group-item-action " id="list-messages-list"
+                            data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages"><i
+                              class="fs-5 fa-solid fa-file-pen text-black"></i><span
+                              class="fs-5 ms-3 d-none d-sm-inline text-dark">Relatorio de Horas</span></a>
+                          <hr class="text-dark">
+                          <a class="list-group-item list-group-item-action " id="list-settings-list"
+                            data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
+                            <i class="fs-5 fa-solid fa-piggy-bank text-black"></i><span
+                              class="fs-5 ms-3 d-none d-sm-inline text-dark">Beneficios</span></a>
+                          <hr class="text-dark">
+                          <hr class="text-white">
+                          <hr class="text-white">
+                          <a class="list-group-item list-group-item-action bg-danger" id="list-sair-list"
+                            data-bs-toggle="list" href="#list-sair" role="tab" aria-controls="list-sair"><i
+                              class="fs-5 fa-solid fa-right-from-bracket text-warning"></i><span
+                              class="fs-5 ms-3 d-none d-sm-inline text-dark">Sair</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+
+            </div>
+            <!-- Conteudo da Pagina-->
+
+            <!-- Exemplo-->
+            <div class="cards">
+              <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                    aria-labelledby="list-home-list">
+                    <%- include ('mInformacao.ejs')%>
+
+                  </div>
+
+                  <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    <%- include ('fPagamentos.ejs')%>
+                  </div>
+
+                  <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    <%- include ('rHoras.ejs')%>
+                  </div>
+
+                  <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                    <%- include ('beneficios.ejs')%>
+                  </div>
+
+                  <div class="tab-pane fade" id="list-sair" role="tabpanel" aria-labelledby="list-sair-list">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fim exemplo-->
+
+        </div>
+
+        </div>
+
+        <script src="/public/js/bootstrap.bundle.js"></script>
+      </body>
+      <%- include ('partials/footer.ejs');%>

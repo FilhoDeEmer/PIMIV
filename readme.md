@@ -1,1 +1,3 @@
-Leia-me
+Projeto PIM IV -- 
+
+Desenvolver um sistema de automatização de folha de pagamento, com base no trabalho de levantamento e análise realizando no semestre anterior, de todos os processos internos para a digitalização do cálculo da folha de pagamento e geração digital de todos os documentos envolvidos neste processo do setor de RH e do departamento pessoal, afim de automatizar totalmente a geração da folha de pagamento. A LGPD (Lei Geral Proteção de Dados) deve ser aplicada para todas as pessoas físicas. 

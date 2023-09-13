@@ -1,0 +1,7 @@
+:root{
+    --terceiro:#026E81;
+}
+
+.bg-emerson, .btn-emerson{
+    background-color: var(--terceiro) !important;
+}

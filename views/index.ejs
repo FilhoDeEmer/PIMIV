@@ -1,0 +1,79 @@
+<!– tela principal –>
+<%- include ('partials/header.ejs')%>
+      
+            <title>Login</title>
+
+            <body>
+                <section class="vh-100">
+                    <div
+                        class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+
+                        <div class="text-white mb-3 mb-md-0">
+                            Projeto PIM IV - Hermes S.E.
+                        </div>
+
+                    </div>
+                    <div class="container-fluid h-auto">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col-md-9 col-lg-6 col-xl-5">
+                                <img src="/public/img/PHOTO-2023-04-26-19-33-45.jpg" class="img" alt="Sample image">
+                            </div>
+                            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                                <form action="/home" method="post">
+                                    <br>
+
+
+                                    <div class="card mt=4">
+                                        <div clas="card-header">
+                                            <label class="form-label"> Login </label>
+                                        </div>
+                                        
+                                            <!-- Email login -->
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form3Example3">E-mail:</label>
+                                                <input type="email" id="emailLogin" class="form-control form-control-lg"
+                                                    placeholder="Entre com seu e-mail" />
+                                            </div>
+
+                                            <!-- Senha login -->
+                                            <div class="form-outline mb-3">
+
+                                                <label class="form-label">Senha:</label>
+                                                <input type="password" id="senhaLogin"
+                                                    class="form-control form-control-lg"
+                                                    placeholder="Entre com sua senha" />
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <a href="#!" class="text-body">Esqueceu a senha?</a>
+                                                </div>
+
+                                                <div class="text-center text-lg-start mt-4 pt-2">
+                                                    <button type="submit" class="btn btn-primary btn-lg"
+                                                        style="padding-left: 2.5rem; padding-right: 2.5rem;">Entrar</button>
+                                                </div>
+                                            </div>
+                                       
+                                    </div>
+
+
+
+
+
+                                    <br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="d-flex flex-column flex-md-row text-center fixed-bottom text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+
+                        <div class="text-white mb-3 mb-md-0">
+                            Projeto PIM IV - Hermes S.E.
+                        </div>
+
+
+
+                    </div>
+                </section>
+
+            </body>
+            <%- include ('partials/footer.ejs');%>
