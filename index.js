@@ -5,7 +5,7 @@ const dbConfig = require ("./server/config/database")
 const connection = require ("./server/database/parans")
 const Sequelize = require ("sequelize")
 
-
+// COMENTARIO TESTE DO DANIEL
 
 
 
