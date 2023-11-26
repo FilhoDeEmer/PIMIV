@@ -6,7 +6,7 @@
       <div class="row g-2">
         <div class="col-sm-7">
           <label for="nome" class="form-label">Nome:</label>
-          <input type="text" class="form-control" placeholder="" id="nome" disabled>
+          <input type="text" value="<%= informacoes.nome%>" class="form-control" placeholder="" id="nome" disabled>
         </div>
         <div class="col-sm-1">
           <label for="ID" class="form-label">Código:</label>
@@ -14,7 +14,7 @@
         </div>
         <div class="col-sm-3">
           <label for="CPF" class="form-label">CPF:</label>
-          <input type="text" class="form-control" placeholder="" id="disabledInput" disabled>
+          <input type="text" class="form-control" placeholder="" id="cpf" disabled>
         </div>
       </div>
       <div class="row g-2">
@@ -66,7 +66,7 @@
       <div class="row g-2">
         <div class="col-sm-7">
           <label for="NomeEmpresa" class="form-label">Nome da Empresa:</label>
-          <input type="text" class="form-control" placeholder="" id="disabledInput" disabled>
+          <input type="text" value="<%= console.log(informacoes.empresa)%>" class="form-control" placeholder="" id="NomeEmpresa" disabled>
         </div>
         <div class="col-sm-4">
           <label for="cnpj" class="form-label">CNPJ:</label>
@@ -110,8 +110,8 @@
   </div>
 </div>
 
-<script type="module">
-  import { Funcionario } from "/js/model/funcionario.js";
+<!-- <script type="module">
+  import Funcionario from "/js/model/funcionario.js";
 
   async function findFuncionario() {
     return await Funcionario.findOne({
@@ -120,4 +120,4 @@
   }
 
   document.getElementById('nome').innerHTML = await findFuncionario().nome;
-</script>
+</script> -->
