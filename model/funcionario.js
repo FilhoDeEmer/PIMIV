@@ -45,10 +45,22 @@ const Funcionario = sequelize.define('Funcionario', {
         type: DataTypes.STRING,
     },
     estado: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
     },
 
 
+    cod_banco: {
+        type: DataTypes.INTEGER,
+    },
+    nome_banco: {
+        type: DataTypes.STRING,
+    },
+    agencia: {
+        type: DataTypes.INTEGER,
+    },
+    n_conta: {
+        type: DataTypes.INTEGER,
+    },
 
 }, { timestamps: false });
 

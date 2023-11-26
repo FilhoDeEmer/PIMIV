@@ -13,7 +13,7 @@ app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-Funcionario.hasOne(Empresa);
+/* Funcionario.hasOne(Empresa); */
 /* Empresa.belongsTo(Funcionario); */
 
 //ROTAS
@@ -26,7 +26,8 @@ app.post("/home", (req, res) => {
 })
 
 app.get("/mInformacao", async function (req, res) {
-    const info = await Funcionario.findOne({where: { nome: 'Igor Prado' }, include: Empresa });
+    const info = await Funcionario.findOne({where: { nome: 'Igor Prado' }});
+    /* const info = await Funcionario.findOne({where: { nome: 'Igor Prado' }, include: Empresa }); */
     res.render("home", {informacoes: info})
 })
 
