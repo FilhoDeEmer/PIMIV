@@ -1,15 +1,15 @@
 const sequelize = require('./database.js').sequelize
 const { DataTypes } = require('sequelize');
-const Empresa = require('./empresa.js').Empresa
+/* const Empresa = require('./empresa.js').Empresa */
 const Funcionario = sequelize.define('Funcionario', {
     codigo_funcionario: { type: DataTypes.INTEGER, primaryKey: true },
-    codigo_empresa: {
+    /* codigo_empresa: {
         type: DataTypes.INTEGER, references: {
             model: Empresa,
 
             key: 'codigo_empresa',
         }
-    },
+    }, */
     nome: {
         type: DataTypes.STRING,
         allowNull: false
@@ -48,6 +48,24 @@ const Funcionario = sequelize.define('Funcionario', {
         type: DataTypes.STRING,
     },
 
+    salario: {
+        type: DataTypes.DECIMAL,
+    },
+    data_adimicao: {
+        type: DataTypes.STRING,
+    },
+    vale_transporte: {
+        type: DataTypes.DECIMAL,
+    },
+    vale_alimentacao: {
+        type: DataTypes.DECIMAL,
+    },
+    vale_refeicao: {
+        type: DataTypes.DECIMAL,
+    },
+    PLANO_DE_SAUDE: {
+        type: DataTypes.DECIMAL,
+    },
 
     cod_banco: {
         type: DataTypes.INTEGER,

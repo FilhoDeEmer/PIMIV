@@ -1,29 +1,53 @@
-<h1>BENEFICIOS</h1>
 <br>
-<div class="container">
-    <div class="row g-2">
-        <div class="card" style="padding: 1.5rem;">
-            <div class="row g-2">
-                <div class="card" style="padding: 1rem;">
-                    <label for="VR" class="form-label">Vale Refeição</label>
-                    <div class="card" style="height: 100px;"></div>
+<h1>BENEFICIOS</h1>
+
+<div class="row g-1">
+    <div class="row g-4">
+        <div class="col-4">
+            <div class="card" style="padding: 1rem;">
+                <label for="VR" class="form-label">Vale Refeição</label>
+                <div class="card" style="height: 100px;">
+                    <span class="fs-5 ms-5">
+                        R$ <%= informacoes.vale_refeicao%>
+                    </span>
                 </div>
             </div>
-            <br>
-            <div class="row g-2">
-                <div class="card" style="padding: 1rem;">
-                    <label for="VA" class="form-label">Vale Alimentação</label>
-                    <div class="card" style="height: 100px;"></div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="padding: 1rem;">
+                <label for="VA" class="form-label">Vale Alimentação</label>
+                <div class="card" style="height: 100px;">
+                    <span class="fs-5 ms-5">
+                        R$ <%= informacoes.vale_alimentacao%>
+                    </span>
                 </div>
             </div>
-            <br>
-            <div class="row g-2">
-                <div class="card" style="padding: 1rem;">
-                    <label for="VT" class="form-label">Vale Transporte</label>
-                    <div class="card" style="height: 100px;"></div>
-                </div>
-            </div>
-            <br>
         </div>
     </div>
+    <br>
+    <br>
+    <div class="row g-4">
+        <div class="col-4">
+            <div class="card" style="padding: 1rem;">
+                <label for="VT" class="form-label">Vale Transporte</label>
+                <div class="card" style="height: 100px;">
+                    <span class="fs-5 ms-5">
+                        R$ <%= informacoes.vale_transporte%>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="padding: 1rem;">
+                <label for="VT" class="form-label">Plano de Saúde</label>
+                <div class="card" style="height: 100px;">
+                    <span class="fs-5 ms-5">
+                        Valor Descontado: R$ <%= informacoes.PLANO_DE_SAUDE%>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
 </div>

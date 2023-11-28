@@ -1,111 +1,121 @@
 <br>
 <h1>MINHAS INFORMAÇÕES</h1>
 <br>
-<div class="container">
+<div class="card" style="padding: 1.5rem;">
+  <div class="row g-2">
+    <div class="row g-2">
+      <div class="col-sm-7">
+        <label for="nome" class="form-label">Nome:</label>
+        <input type="text" value="<%= informacoes.nome%>" class="form-control" placeholder="" id="nome" disabled>
+      </div>
+      <div class="col-sm-1">
+        <label for="ID" class="form-label">Código:</label>
+        <input type="number" value="<%= informacoes.codigo_funcionario%>" class="form-control" placeholder=""
+          id="disabledInput" disabled>
+      </div>
+      <div class="col-sm-3">
+        <label for="CPF" class="form-label">CPF:</label>
+        <input type="text" value="<%= informacoes.cpf%>" class="form-control" placeholder="" id="cpf" disabled>
+      </div>
+    </div>
+    <div class="row g-2">
+      <div class="col-sm-3">
+        <label for="RG" class="form-label">RG:</label>
+        <input type="text" value="<%= informacoes.rg%>" class="form-control" placeholder="" id="rg" disabled>
+      </div>
+      <div class="col-sm-2">
+        <label for="DataDeNascimento" class="form-label">Data de Nascimento:</label>
+        <input type="text" value="<%= informacoes.data_nascimento%>" class="form-control" placeholder=""
+          id="datanascimento" disabled>
+      </div>
+      <div class="col-sm-3">
+        <label for="E-mailFuncionario" class="form-label">E-mail:</label>
+        <input type="text" value="<%= informacoes.email%>" class="form-control" placeholder="" id="email" disabled>
+      </div>
+      <div class="col-sm-3">
+        <label for="TelefoneFuncionario" class="form-label">Telefone:</label>
+        <input type="text" value="<%= informacoes.telefone%>" class="form-control" placeholder="" id="telefone"
+          disabled>
+      </div>
+    </div>
+  </div>
+  <br>
   <div class="card" style="padding: 1.5rem;">
     <div class="row g-2">
-      <div class="row g-2">
-        <div class="col-sm-7">
-          <label for="nome" class="form-label">Nome:</label>
-          <input type="text" value="<%= informacoes.nome%>" class="form-control" placeholder="" id="nome" disabled>
-        </div>
-        <div class="col-sm-1">
-          <label for="ID" class="form-label">Código:</label>
-          <input type="number" value="<%= informacoes.codigo_funcionario%>" class="form-control" placeholder="" id="disabledInput" disabled>
-        </div>
-        <div class="col-sm-3">
-          <label for="CPF" class="form-label">CPF:</label>
-          <input type="text" value="<%= informacoes.cpf%>" class="form-control" placeholder="" id="cpf" disabled>
-        </div>
+      <div class="col-sm-7">
+        <label for="Rua" class="form-label">Rua:</label>
+        <input type="text" value="<%= informacoes.rua%>" class="form-control" placeholder="" id="Rua" disabled>
       </div>
-      <div class="row g-2">
-        <div class="col-sm-3">
-          <label for="RG" class="form-label">RG:</label>
-          <input type="text" value="<%= informacoes.rg%>" class="form-control" placeholder="" id="rg" disabled>
-        </div>
-        <div class="col-sm-2">
-          <label for="DataDeNascimento" class="form-label">Data de Nascimento:</label>
-          <input type="text" value="<%= informacoes.data_nascimento%>" class="form-control" placeholder="" id="datanascimento" disabled>
-        </div>
-        <div class="col-sm-3">
-          <label for="E-mailFuncionario" class="form-label">E-mail:</label>
-          <input type="text" value="<%= informacoes.email%>" class="form-control" placeholder="" id="email" disabled>
-        </div>
-        <div class="col-sm-3">
-          <label for="TelefoneFuncionario" class="form-label">Telefone:</label>
-          <input type="text" value="<%= informacoes.telefone%>" class="form-control" placeholder="" id="telefone" disabled>
-        </div>
+      <div class="col-sm-3">
+        <label for="CEP:" class="form-label">CEP:</label>
+        <input type="text" value="<%= informacoes.cep%>" class="form-control" placeholder="" id="CEP" disabled>
+      </div>
+      <div class="col-sm-1">
+        <label for="UF" class="form-label">UF:</label>
+        <input type="text" value="<%= informacoes.estado%>" class="form-control" placeholder="" id="UF" disabled>
+      </div>
+      <div class="col-sm-2">
+        <label for="Numero" class="form-label">Número:</label>
+        <input type="text" value="<%= informacoes.numero%>" class="form-control" placeholder="" id="Numero" disabled>
+      </div>
+      <div class="col-sm-9">
+        <label for="Cidade" class="form-label">Cidade:</label>
+        <input type="text" value="<%= informacoes.cidade%>" class="form-control" placeholder="" id="Cidade" disabled>
       </div>
     </div>
-    <br>
-    <div class="card" style="padding: 1.5rem;">
-      <div class="row g-2">
-        <div class="col-sm-7">
-          <label for="Rua" class="form-label">Rua:</label>
-          <input type="text" value="<%= informacoes.rua%>" class="form-control" placeholder="" id="Rua" disabled>
-        </div>
-        <div class="col-sm-3">
-          <label for="CEP:" class="form-label">CEP:</label>
-          <input type="text" value="<%= informacoes.cep%>" class="form-control" placeholder="" id="CEP" disabled>
-        </div>
-        <div class="col-sm-1">
-          <label for="UF" class="form-label">UF:</label>
-          <input type="text" value="<%= informacoes.estado%>" class="form-control" placeholder="" id="UF" disabled>
-        </div>
-        <div class="col-sm-2">
-          <label for="Numero" class="form-label">Número:</label>
-          <input type="text" value="<%= informacoes.numero%>" class="form-control" placeholder="" id="Numero" disabled>
-        </div>
-        <div class="col-sm-9">
-          <label for="Cidade" class="form-label">Cidade:</label>
-          <input type="text" value="<%= informacoes.cidade%>" class="form-control" placeholder="" id="Cidade" disabled>
-        </div>
+  </div>
+  <br>
+  <div class="card" style="padding: 1.5rem;">
+    <div class="row g-2">
+      <div class="col-sm-7">
+        <label for="NomeEmpresa" class="form-label">Nome da Empresa:</label>
+        <input type="text" value="<%= infoempresas.nome%>" class="form-control" placeholder="" id="NomeEmpresa"
+          disabled>
+      </div>
+      <div class="col-sm-4">
+        <label for="cnpj" class="form-label">CNPJ:</label>
+        <input type="text" value="<%= infoempresas.cnpj%>" class="form-control" placeholder="" id="disabledInput"
+          disabled>
+      </div>
+      <div class="col-sm-6">
+        <label for="NomeCargo" class="form-label">Nome do Cargo:</label>
+        <input type="text" value="<%= infocargos.nome%>" class="form-control" placeholder="" id="disabledInput"
+          disabled>
+      </div>
+      <div class="col-sm-3">
+        <label for="Salario" class="form-label">Salário:</label>
+        <input type="text" value="R$ <%= informacoes.salario%>" class="form-control" placeholder="" id="disabledInput"
+          disabled>
+      </div>
+      <div class="col-sm-2">
+        <label for="admissaoData" class="form-label">Data da Admissão:</label>
+        <input type="date" value="<%= informacoes.data_adimicao%>" class="form-control" placeholder=""
+          id="disabledInput" disabled>
       </div>
     </div>
-    <br>
-    <div class="card" style="padding: 1.5rem;">
-      <div class="row g-2">
-        <div class="col-sm-7">
-          <label for="NomeEmpresa" class="form-label">Nome da Empresa:</label>
-          <input type="text" value="<%= console.log(informacoes.empresa)%>" class="form-control" placeholder="" id="NomeEmpresa" disabled>
-        </div>
-        <div class="col-sm-4">
-          <label for="cnpj" class="form-label">CNPJ:</label>
-          <input type="text" class="form-control" placeholder="" id="disabledInput" disabled>
-        </div>
-        <div class="col-sm-6">
-          <label for="NomeCargo" class="form-label">Nome do Cargo:</label>
-          <input type="text" class="form-control" placeholder="" id="disabledInput" disabled>
-        </div>
-        <div class="col-sm-3">
-          <label for="Salario" class="form-label">Salário:</label>
-          <input type="text" class="form-control" placeholder="" id="disabledInput" disabled>
-        </div>
-        <div class="col-sm-2">
-          <label for="admissaoData" class="form-label">Data da Admissão:</label>
-          <input type="date" class="form-control" placeholder="" id="disabledInput" disabled>
-        </div>
+  </div>
+  <br>
+  <div class="card" style="padding: 1.5rem;">
+    <div class="row g-2">
+      <div class="col-sm-1">
+        <label for="CodigoBanco" class="form-label">Código:</label>
+        <input type="number" value="<%= informacoes.cod_banco%>" class="form-control" placeholder="" id="disabledInput"
+          disabled>
       </div>
-    </div>
-    <br>
-    <div class="card" style="padding: 1.5rem;">
-      <div class="row g-2">
-        <div class="col-sm-1">
-          <label for="CodigoBanco" class="form-label">Código:</label>
-          <input type="number" value="<%= informacoes.cod_banco%>" class="form-control" placeholder="" id="disabledInput" disabled>
-        </div>
-        <div class="col-sm-4">
-          <label for="NomeBanco" class="form-label">Banco:</label>
-          <input type="text" value="<%= informacoes.nome_banco%>" class="form-control" placeholder="" id="disabledInput" disabled>
-        </div>
-        <div class="col-sm-3">
-          <label for="Agencia" class="form-label">Agência:</label>
-          <input type="number" value="<%= informacoes.agencia%>" class="form-control" placeholder="" id="disabledInput" disabled>
-        </div>
-        <div class="col-sm-3">
-          <label for="Conta" class="form-label">Código Conta:</label>
-          <input type="number" value="<%= informacoes.n_conta%>" class="form-control" placeholder="" id="disabledInput" disabled>
-        </div>
+      <div class="col-sm-4">
+        <label for="NomeBanco" class="form-label">Banco:</label>
+        <input type="text" value="<%= informacoes.nome_banco%>" class="form-control" placeholder="" id="disabledInput"
+          disabled>
+      </div>
+      <div class="col-sm-3">
+        <label for="Agencia" class="form-label">Agência:</label>
+        <input type="number" value="<%= informacoes.agencia%>" class="form-control" placeholder="" id="disabledInput"
+          disabled>
+      </div>
+      <div class="col-sm-3">
+        <label for="Conta" class="form-label">Código Conta:</label>
+        <input type="number" value="<%= informacoes.n_conta%>" class="form-control" placeholder="" id="disabledInput"
+          disabled>
       </div>
     </div>
   </div>
