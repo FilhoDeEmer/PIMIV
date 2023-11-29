@@ -11,10 +11,6 @@ const Empresa = sequelize.define('Empresa', {
         type: DataTypes.STRING,
         allowNull: false
     }
-
-
-
-
 }, { timestamps: false });
 
 

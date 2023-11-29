@@ -13,13 +13,29 @@
                     </div>
 
                 </div>
+                <% if (message) { %>
+                    <div id="toastMessageData" data-toast-message=<%= message %>></div>
+                    <div class="toast-container position-absolute top-0 end-0">
+                        <div id="messageToast" class="toast align-items-center text-white bg-danger border-0" role="alert"
+                            aria-live="assertive" aria-atomic="true">
+                            <div class="d-flex">
+                                <div class="toast-body">
+                                    <%= message %>
+                                </div>
+                                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+                
                 <div class="container-fluid h-auto">
                     <div class="row d-flex justify-content-center align-items-center h-100">
                         <div class="col-md-9 col-lg-6 col-xl-5">
                             <img src="/img/PHOTO-2023-04-26-19-33-45.jpg" class="img" alt="Sample image">
                         </div>
                         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                            <form action="/home" method="post">
+                            <form action="/login" method="post">
                                 <br>
 
 
@@ -34,20 +50,19 @@
                                     <form id="validacaoLogin" action="/usuario" method="post">
                                         <div class="form-outline mb-4">
                                             <form action=""></form>
-                                            <label class="form-label" for="form3Example3">E-mail:</label>
-                                            <input type="text" id="usuario" class="form-control form-control-lg"
-                                                placeholder="Entre com seu e-mail" />
+                                            <label class="form-label" for="Login">Login:</label>
+                                            <input type="text" name="user" id="usuario"
+                                                class="form-control form-control-lg"
+                                                placeholder="Entre com seu Login" />
                                         </div>
 
                                         <!-- Senha login -->
                                         <div class="form-outline mb-3">
 
                                             <label class="form-label">Senha:</label>
-                                            <input type="password" id="senhaLogin" class="form-control form-control-lg"
+                                            <input type="password" name="password" id="senhaLogin"
+                                                class="form-control form-control-lg"
                                                 placeholder="Entre com sua senha" />
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <a href="#!" class="text-body">Esqueceu a senha?</a>
-                                            </div>
 
                                             <div class="text-center text-lg-start mt-4 pt-2">
                                                 <button type="submit" class="btn btn-primary btn-lg"
@@ -80,4 +95,4 @@
             </section>
 
         </body>
-        <%- include ('partials/footer.ejs');%>
+        <%- include ('partials/footer.ejs', {message: message});%>

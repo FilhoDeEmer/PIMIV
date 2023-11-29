@@ -3,13 +3,15 @@ const { DataTypes } = require('sequelize');
 /* const Empresa = require('./empresa.js').Empresa */
 const Funcionario = sequelize.define('Funcionario', {
     codigo_funcionario: { type: DataTypes.INTEGER, primaryKey: true },
-    /* codigo_empresa: {
-        type: DataTypes.INTEGER, references: {
-            model: Empresa,
-
-            key: 'codigo_empresa',
-        }
-    }, */
+    codigo_empresa: {
+        type: DataTypes.INTEGER
+    },
+    codigo_cargo: {
+        type: DataTypes.INTEGER
+    },
+    codigo_usuario: {
+        type: DataTypes.INTEGER
+    },
     nome: {
         type: DataTypes.STRING,
         allowNull: false

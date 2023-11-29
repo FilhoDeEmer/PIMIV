@@ -1,16 +1,63 @@
 <br>
 <h1>FOLHA DE PAGAMENTOS</h1>
+<br>
 <div class="row g-2">
-    <div class="row g-2">
-        <div class="col-sm-3">
-            <label for="nome" class="form-label">Salário:</label>
-            <input type="text" value="R$ <%= informacoes.salario%>" class="form-control" placeholder="" id="nome"
-                disabled>
-        </div>
+    <div class="card" style="padding: 1rem; width: 700px">
         <div class="row g-2">
-            <div class="col-sm-3">
-                <label for="ID" class="form-label">Valor de proventos:</label>
-                <input type="number" value="<%= informacoes.codigo_funcionario%>" class="form-control" placeholder=""
-                    id="" disabled>
+            <div class="row g-2">
+                <div class="col-sm-3">
+                    <label for="salario" class="form-label">Salário:</label>
+                    <input type="text" value="R$ <%= informacoes.salario%>" class="form-control" placeholder=""
+                        id="salario" disabled>
+                </div>
+            
+                <% if (infofolhas) { %>
+                <div class="col-sm-3">
+                    <label for="proventos" class="form-label">Valor de proventos:</label>
+                    <input type="text" value="R$ <%= infofolhas.VALORPROVENTOS%>" class="form-control" placeholder=""
+                        id="valorprovento" disabled>
+                </div>
+                <% } %>
             </div>
+
+            <% if (infofolhas) { %>
+            <div class="row g-2">
+                <div class="col-sm-3">
+                    <label for="valorDescontos" class="form-label">Valor de Descontos:</label>
+                    <input type="text" value="R$ <%= infofolhas.VALORDESCONTOS%>" class="form-control" placeholder=""
+                        id="valorDescontos" disabled>
+                </div>
+                <div class="col-sm-3">
+                    <label for="valorLiquido" class="form-label">Valor Líquido:</label>
+                    <input type="text" value="R$ <%= infofolhas.VALORLIQUIDO%>" class="form-control" placeholder=""
+                        id="valorLiquido" disabled>
+                </div>
+            </div>
+            <div class="card" style="padding: 1rem; width: 700px">
+                <div class="row g-2">
+                    <div class="col-sm-3">
+                        <label for="Taxas" class="form-label">TAXAS:</label>
+
+                    </div>
+                    <div class="row g-1">
+                        <div class="col-2">
+                            <label for="IRRF">IRRF:</label>
+                            <input type="text" value="<%= infofolhas.FAIXAIRRF%>" class="form-control" placeholder=""
+                                id="IRRF" disabled>
+                        </div>
+
+
+                    </div>
+                    <div class="row g-1">
+                        <div class="col-2">
+                            <label for="FGTSmes" class="form-label">FGTS:</label>
+                            <input type="text" value="<%= infofolhas.FGTSMES%>" class="form-control" placeholder=""
+                                id="FGTSmes" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% } %>
         </div>
+    </div>
+</div>

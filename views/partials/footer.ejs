@@ -3,4 +3,15 @@
 <script src="/js/bootstrap.min.js"></script>
 <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="/public/js/bootstrap.bundle.js"></script>
+<script>
+    //document.getElementById("toastbtn").onclick = function() {
+      var toast = document.getElementById('messageToast'); //select id of toast
+      var bootstrapToast = new bootstrap.Toast(toast); //inizialize it
+      var message = document.getElementById('toastMessageData').dataset.toastMessage
+      if (message){
+        bootstrapToast.show(); //show it
+      }
+      console.log(message);
+    //};
+</script>
 </html>
